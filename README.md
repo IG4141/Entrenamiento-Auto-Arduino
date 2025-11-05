@@ -1,13 +1,10 @@
-# 🚗 Proyecto: Coche Arduino con Inteligencia Artificial
+#  Proyecto: Coche Arduino con Inteligencia Artificial
 
 Integrantes:
 
 Ivo Giuliano Cappetto
-
 Martin Sanchez
-
 Nicolas Fernandez
-
 Santiago Luna
 
 Este proyecto consiste en implementar un **modelo de red neuronal** entrenado en **Python (Colab)** y luego llevarlo a un **Arduino Uno** utilizando la simulación en **Wokwi**.  
@@ -15,7 +12,7 @@ El objetivo fue que el coche (simulado) pueda tomar decisiones en función de do
 
 ---
 
-## 🧠 1. Arquitectura observada en el proyecto
+##  1. Arquitectura observada en el proyecto
 
 Durante el análisis del proyecto original de Aprende Machine Learning, identificamos una red neuronal de tipo **feed-forward**, compuesta por:
 
@@ -29,7 +26,7 @@ Se trata de una red pequeña, pensada para ser implementada en hardware limitado
 
 ---
 
-## 🧩 2. Enfoques de resolución de problemas aplicados
+##  2. Enfoques de resolución de problemas aplicados
 
 | Enfoque | Descripción |
 |----------|-------------|
@@ -41,7 +38,7 @@ Se trata de una red pequeña, pensada para ser implementada en hardware limitado
 
 ---
 
-## ⚙️ 3. Entrenamiento de la red (Colab)
+##  3. Entrenamiento de la red (Colab)
 
 El entrenamiento se realizó en Google Colab usando NumPy, con una red de arquitectura `[2, 3, 4]`.  
 Luego de entrenar, se exportaron los pesos obtenidos:
@@ -60,7 +57,7 @@ Luego de entrenar, se exportaron los pesos obtenidos:
 
 ---
 
-## 🧮 4. Simulación y nuevas pruebas
+##  4. Simulación y nuevas pruebas
 
 En la etapa siguiente, se agregaron dos entradas nuevas y una salida adicional para comprobar la capacidad de ajuste de la red.  
 Se volvió a entrenar con la nueva tabla de verdad y se verificaron las salidas esperadas.  
@@ -68,7 +65,7 @@ Luego, con los pesos finales, se implementó el modelo en Arduino (Wokwi).
 
 ---
 
-## 🧪 5. Resultados obtenidos en la simulación
+##  5. Resultados obtenidos en la simulación
 
 Al ejecutar el código en **Wokwi** (monitor serial), se observaron las siguientes salidas:
 
@@ -109,7 +106,7 @@ Las respuestas varían suavemente según las entradas, lo que confirma que el mo
 
 ---
 
-## 🔧 6. Implementación en Arduino (resumen)
+##  6. Implementación en Arduino (resumen)
 
 El código del microcontrolador (archivo `sketch.ino`) reproduce el modelo matemático de la red, aplicando los pesos obtenidos en Python.
 
@@ -117,7 +114,7 @@ Se simularon tres entradas de prueba con resultados coherentes al entrenamiento 
 
 ---
 
-## 📁 7. Estructura del proyecto
+##  7. Estructura del proyecto
 
 ```plaintext
 arduino-ai-car/
