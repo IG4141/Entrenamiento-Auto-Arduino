@@ -6,7 +6,7 @@ float tanh_activation(float x) {
   return tanh(x);
 }
 
-// ⚙️ Pesos entrenados (ejemplo; reemplaza con los tuyos)
+//  Pesos entrenados (ejemplo; reemplaza con los tuyos)
 float W1[3][3] = {
   {0.5, -0.12, 0.88},
   {-0.31, 0.74, 0.22},
@@ -48,7 +48,7 @@ void setup() {
 
   Serial.println("=== Simulación de red neuronal ===");
 
-  // 🔹 Entradas de prueba
+  //  Entradas de prueba
   float entradas[3][2] = {
     {-1, -1},
     {0, 1},
