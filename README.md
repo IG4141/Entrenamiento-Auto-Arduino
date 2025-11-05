@@ -119,6 +119,55 @@ Se simularon tres entradas de prueba con resultados coherentes al entrenamiento 
 
 ---
 
+## Tablas de verdad por integrante
+
+### Integrante 1 – [Ivo Giuliano Cappetto]
+| x1 | x2 | y1 | y2 | y3 | y4 |
+|----|----|----|----|----|----|
+| -1 | -1 | 1 | 0 | 0 | 0 |
+|  0 |  1 | 0 | 1 | 0 | 0 |
+|  1 | -1 | 0 | 0 | 1 | 0 |
+|  0 |  0 | 0 | 0 | 0 | 1 |
+
+Comportamiento base: el coche avanza o gira según los sensores laterales, y se detiene cuando ambos sensores son neutros.
+
+---
+
+### Integrante 2 – [Martin Sanchez]
+| x1 | x2 | y1 | y2 | y3 | y4 | y5 |
+|----|----|----|----|----|----|----|
+| -1 | -1 | 1 | 0 | 0 | 0 | 0 |
+|  0 |  1 | 0 | 1 | 0 | 0 | 0 |
+|  1 | -1 | 0 | 0 | 1 | 0 | 0 |
+|  0 |  0 | 0 | 0 | 0 | 1 | 1 |
+
+Agrega una salida extra (y5) para representar la acción “retroceder”, usada cuando los sensores no detectan obstáculos.
+
+---
+
+### Integrante 3 – [Nicolas Fernandez]
+| x1 | x2 | y1 | y2 | y3 | y4 |
+|----|----|----|----|----|----|
+| -1 |  1 | 0 | 1 | 0 | 0 |
+|  0 |  0 | 0 | 0 | 0 | 1 |
+|  1 |  1 | 1 | 0 | 0 | 0 |
+| -1 |  0 | 0 | 0 | 1 | 0 |
+
+Modifica la sensibilidad: prioriza girar hacia el lado opuesto del obstáculo detectado.
+
+---
+
+### Integrante 4 – [Santiago Luna]
+| x1 | x2 | y1 | y2 | y3 | y4 |
+|----|----|----|----|----|----|
+| -1 | -1 | 0 | 0 | 0 | 1 |
+|  1 |  0 | 1 | 0 | 0 | 0 |
+|  0 |  1 | 0 | 1 | 0 | 0 |
+|  1 |  1 | 0 | 0 | 1 | 0 |
+
+Este diseño considera un modo de “parada total” cuando ambos sensores detectan obstáculos y avanza solo cuando hay un camino libre en al menos un lado.
+
+
 ##  7. Estructura del proyecto
 
 ```plaintext
