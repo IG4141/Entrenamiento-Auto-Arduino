@@ -116,3 +116,13 @@ El código del microcontrolador (archivo `sketch.ino`) reproduce el modelo matem
 Se simularon tres entradas de prueba con resultados coherentes al entrenamiento previo.
 
 ---
+
+## 📁 7. Estructura del proyecto
+
+```plaintext
+arduino-ai-car/
+├── Actividad_entrenamiento_05_11_2025    # Entrenamiento de la red neuronal
+├── sketch.ino              # Código Arduino (inferencia)
+├── diagram.json            # Circuito Wokwi (Arduino Uno)
+├── peso.txt               # Pesos entrenados
+└── README.md               # Documentación del trabajo práctico
