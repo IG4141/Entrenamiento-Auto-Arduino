@@ -67,6 +67,8 @@ Luego, con los pesos finales, se implementó el modelo en Arduino (Wokwi).
 
 ##  5. Resultados obtenidos en la simulación
 
+https://wokwi.com/projects/446822599411851265
+
 Al ejecutar el código en **Wokwi** (monitor serial), se observaron las siguientes salidas:
 
 === Simulación de red neuronal ===
